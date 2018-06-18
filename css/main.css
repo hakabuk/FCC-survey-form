@@ -1,0 +1,261 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: arial;
+  /* center all items within body, this property is inherited */
+  text-align: center;
+}
+
+body > * {
+  /* left-align the CONTENTS all items within body, additionally
+   you can add this text-align: left property to all elements manually */
+  text-align: left;
+}
+
+#main {
+  width: 100%;
+}
+
+#title {
+  font-family: 'Patua One', cursive;
+  font-size: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+  background-color: #247ba0;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 30px 0 60px 0;
+  margin: 0;
+}
+
+form {
+  /* reduces the width of the form to only what is necessary */
+  max-width: 650px;
+  color: #605f5f;
+  background-color: #eff5ff;
+  padding: 10px 20px 40px 20px;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+  box-shadow: 1px 0px 1px black;
+}
+
+#description {
+  font-size: 25px;
+  text-align: center;
+  color: #247ba0;
+}
+
+.glowing-border:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+#dropdown-question,
+#dropdown {
+  width: 650px;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+textarea {
+  margin: 10px;
+  padding: 9px;
+  border: solid 1px #e5e5e5;
+  font: normal 13px/100% Verdana, Tahoma, sans-serif;
+  width: 100%;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border-color: #c9c9c9;
+}
+
+/* Table display to align top fields */
+.form-personal {
+  display: table;
+}
+
+.p-form {
+  display: table-row;
+}
+#number-label,
+#email-label,
+#name-label,
+#gender {
+  display: table-cell;
+}
+#name,
+#age,
+#email,
+#gender-top {
+  display: table-cell;
+}
+#female-label,
+#male-label,
+#other-label {
+  display: inline-block;
+}
+/* end of table display */
+
+.gender-input {
+  margin-top: 20px;
+  margin-left: 13px;
+}
+
+#dropdown-question {
+  margin: 30px 0 20px 0;
+}
+
+#textarea-question {
+  margin: 30px 0 10px 0;
+}
+
+#dropdown {
+  width: 630px;
+  margin-left: 0;
+  margin-top: 0;
+  color: #605f5f;
+  font-size: 14px;
+}
+
+textarea {
+  width: 630px;
+  margin-left: 0;
+  font-size: 14px;
+  height: 100px;
+  min-height: 20px;
+  color: #605f5f;
+}
+
+.checkbox {
+  margin-top: 10px;
+}
+
+#submit-section {
+  width: 100%;
+  display: inline-block;
+  box-align: center;
+  margin: -10px auto -30px auto;
+}
+
+#submit {
+  width: 40%;
+  height: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 30px 30px;
+  border: 2px solid #01c640;
+  background-color: #01c640;
+  box-shadow: 1px 1px 1px black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#reminder {
+  background-color: #247ba0;
+  width: 40%;
+  height: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 30px 30px;
+  border: 2px solid #247ba0;
+  box-shadow: 1px 1px 1px black;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#reminder:hover,
+#submit:hover {
+  background-color: white;
+  color: black;
+}
+
+#credit {
+  background-color: #247ba0;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  margin-top: -40px;
+}
+
+.white-link,
+.white-link:visited,
+.white-link:hover {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  #main {
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #cover-img {
+    display: none;
+  }
+  #title {
+    font-size: 2em;
+    padding: 20px 0 60px 0;
+    width: 100%;
+  }
+  #description {
+    font-size: 22px;
+    padding: 0;
+    margin: 10px 0;
+  }
+  textarea {
+    width: 95%;
+  }
+  #dropdown-question {
+    width: 100%;
+  }
+  #dropdown {
+    width: 95%;
+  }
+  #submit-section {
+    text-align: center;
+    margin: auto;
+  }
+  #submit,
+  #reminder {
+    width: 100%;
+    margin: 10px auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #number-label,
+  #email-label,
+  #name-label,
+  #gender-top {
+    display: none;
+  }
+  #email,
+  #name,
+  #number {
+    width: 98%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .gender-input {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  #title {
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+  }
+}

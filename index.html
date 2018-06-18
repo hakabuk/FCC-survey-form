@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Focus Test</title>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon.ico">
+  </head>
+
+  <body>
+    <div id="main">
+    <h1 id="title">Are You Easily Distracted?</h1>
+    <form id="survey-form">  
+    <p id="description">Answer a short survey and receive tips for better time management</p>
+
+        <div class="form-survey">
+          <p id="dropdown-question">When was the last time you postponed an important task for no good reason?</p>
+        <select id="dropdown" name="time" required>
+          <option value="">-- Choose best estimation --</option>
+          <option value="now">Right now by filling this form</option>
+          <option value="1/2hours">Earlier today</option>
+          <option value="2days">In the past few days</option>
+          <option value="morethanaweek">It's been more than a week</option>
+          <option value="dontremember">I don't remember</option>
+        </select>
+        <p id="textarea-question">Please share some more about your working habits:</p></div>
+
+        <textarea name="comment" class="glowing-border">e.g: What are your most common distractions, which tasks do you find are hardest to focus on, etc</textarea><br>
+      
+            <div class="form-personal">
+        <p class="p-form">
+          <label for="name" id="name-label">Name:</label>
+          <input id="name" type="text" name="name" placeholder="Full Name" maxlength="30" class="glowing-border" required>
+          </p>
+          <p class="p-form">
+            <label for="email" id="email-label" maxlength="20">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Email" class="glowing-border" required>
+        </p>
+        <p class="p-form">
+          <label for="number" id="number-label">Age:</label>
+        <input id="number" type="number" placeholder="Age" min="18" max="100" class="glowing-border">
+          </p>
+        <p class="p-form">
+          <p id="gender-top">Gender:</p>
+          <span id="cell">
+          <input type="radio" name="gender" class="gender-input" id="female" value="female">
+          <label for="female" class="gender-label">Female</label><br>
+          <input type="radio" name="gender" class="gender-input" id="male" value="male">
+          <label for="male" class="gender-label">Male</label><br>
+          <input type="radio" name="gender" class="gender-input" id="other" value="other">
+          <label for="other" class="gender-label">Other</label><br>
+          </span>
+          </p>
+          </div>
+
+          <input type="checkbox" class="checkbox" id="tips" name="agreement" value="tips">
+          <label for="tips" class="checkbox-text">I want to receive time management tips!</label><br>
+          <input type="checkbox" class="checkbox" id="info" name="agreement" value="info">
+          <label for="info" class="checkbox-text">Please do whatever you want with my info</label><br>
+        </p>
+     <div id="submit-section">
+        <input class="button" id="submit" type="submit" value="Submit">
+        <button class="button" id="reminder" type="button" value="Remind me later">Remind me later</button>
+        </div>
+      </form>
+    </div>
+  </div>
+      <footer><p id="credit">Created by <a class="white-link" href="https://github.com/hakabuk" target="_blank">Michal Weizman</a></p>
+    </footer>
+  </body>
+</html>
